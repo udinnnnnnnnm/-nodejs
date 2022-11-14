@@ -12,21 +12,10 @@ class CourseController {
          Course.findOne({ slug: req.params.slug })
 
             .then(course => {
-                // res.json(course)
 
-                    // console.log(course)vb
-
-                res.render('courses/show.handlebars' , {
-
-
-                    course : course
-                    //  course: mongooseToOject(course) 
-                    
-                    
-                    })
+                res.render('courses/show.handlebars' , { course:mongooseToOject(course)  })
                 
-                }
-            )
+                })
 
             .catch(next);
 

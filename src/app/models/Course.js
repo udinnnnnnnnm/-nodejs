@@ -16,7 +16,7 @@ const Course = new Schema({
 
     
     img: { type: String, maxLenath: 255 },
-    videoID: { type: String, maxLenath: 255 },
+    videoId: { type: String, maxLenath: 255 },
     description:{ type: String, default: 'hahaha'},
     date: { type: Date, default: Date.now },
     slug: { type: String, slug: "name" }
